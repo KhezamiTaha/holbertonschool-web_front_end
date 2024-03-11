@@ -5,7 +5,7 @@ Main_file = test_save_reload_user.py
 
 #Main_file = $(number)-main.py
 
-NAME =  <body></body>
+NAME =  <link rel="icon" type="image/png" href="./favicon.png">
 NAME1 =  def raise_exception_msg(message=""):
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 number = $(shell echo $(Function_file) | grep -o '[0-9]*' | head -n1)
