@@ -90,6 +90,9 @@ git:
 	rm -rf __pycache__
 	$(git)
 
+git-%:
+	@$(MAKE) git NAME="$*"	
+
 echo:
 	
 	echo  $(NAME)
