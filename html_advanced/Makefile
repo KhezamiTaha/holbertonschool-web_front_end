@@ -3,7 +3,7 @@
 Function_file = ./models/base_model.py
 Main_file = test_save_reload_user.py 
 
-#Main_file = $(number)-main.py
+#Main_file =   $(number)-main.py
 
 NAME =  comments
 NAME1 =  def raise_exception_msg(message=""):
