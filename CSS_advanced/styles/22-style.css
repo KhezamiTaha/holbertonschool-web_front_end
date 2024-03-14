@@ -1,15 +1,12 @@
-[data-section-theme="dark"] {
-    /* Redefine the custom property text-color to the color-white */
-    --text-color: white;
-
-    /* Redefine the custom property section-title-color to color-white */
-    --section-title-color: white;
-
-    /* Set the background to the variable color-black */
-    background: var(--color-black);
-}
-
 /* Comment for Css styling */
+
+
+
+[data-section-theme="dark"] {
+    background: var(--color-black);
+    --text-color: var(--color-white);
+    --section-title-color:var(--color-white) ;
+
 
 [class^="col-"] {
 	float: left;
