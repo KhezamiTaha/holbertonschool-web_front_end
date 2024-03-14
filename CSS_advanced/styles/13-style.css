@@ -1,24 +1,24 @@
 /* Ensure that the declaration targeting anchor elements only targets those containing a hyperlink */
-a[href] {
+a:link {
     /* Define styles for regular anchor elements */
     color: text-color;
     text-decoration: none;
   }
   
   /* Target the visited state for the link */
-  a[href]:visited {
+  a:visited {
     /* Italicize the text */
     font-style: italic;
   }
   
   /* Target the hover state for the link */
-  a[href]:hover {
+  a:hover {
     /* Decorate the links with an underline when hovering */
     text-decoration: underline;
   }
   
   /* Target the active state for the link */
-  a[href]:active {
+  a:active {
     /* Set the color of the background with the variable color-light-grey */
     background-color: var(--color-light-grey);
   }
