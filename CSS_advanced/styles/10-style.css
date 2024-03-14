@@ -1,0 +1,126 @@
+/* Style the anchor elements so the text isn't decorated with anything */
+a {
+    text-decoration: none;
+}
+
+/* Targeting the root element, create the following custom properties */
+:root {
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+}
+
+/* Set the minimum height of line boxes in the body to line-height-base */
+body {
+    line-height: var(--line-height-base);
+}
+
+:root {
+    --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/** CSS */
+/* For the body, set the foreground color value to #161616 */
+body {
+    color: text-color;
+}
+
+/* For all anchor elements, set the foreground color value to #161616 */
+a {
+    color: text-color;
+}
+
+/* All elements with the class visually-hidden should have their display set to none */
+.visually-hidden {
+    display: none;
+}
+
+/* All elements with the class card-category should have their foreground color set to #D73953 */
+.card-category {
+    color: color-primary;
+}
+
+:root {
+    --section-header-align: center;
+  }
+  
+  /* Just above the section-tagline declaration, create a new declaration targeting the class section-header */
+  .section-header {
+    /* Set horizontal alignment of that class with section-header-align */
+    text-align: var(--section-header-align);
+  }
+
+/* All elements with the class section-tagline should have their foreground color set to #D73953 */
+.section-tagline {
+    color: color-primary;
+}
+
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+}
+
+/* Set body's font-family to font-family-base */
+body {
+    font-family: var(--font-family-base);
+}
+
+/* Create a new declaration targeting all 6 levels of heading tags */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* Set its font-family to font-family-title */
+    font-family: var(--font-family-title);
+}
+
+/* Targeting the root selector, create the following custom properties */
+:root {
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+}
+
+/* All fonts in the html element should be at 62.5% of their normal size */
+html {
+    font-size: 62.5%;
+}
+
+/* Any fonts in the body should have their sizes set to font-size-medium */
+body {
+    font-size: var(--font-size-medium);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Targeting the root element, create the following custom properties */
+:root {
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+}
+
+/* Set the boldness of fonts in the body to font-weight-regular */
+body {
+    font-weight: var(--font-weight-regular);
+}
+
+/* Set the boldnes s of fonts in the headings to font-weight-bold */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--font-weight-bold);
+}
