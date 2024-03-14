@@ -76,7 +76,7 @@ file:
 
 create_files:
 	for i in $$(seq 1 32); do \
-		touch $$i-styles.css; \
+		touch $$i-style.css; \
 	done
 
 touch:
