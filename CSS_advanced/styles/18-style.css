@@ -1,47 +1,30 @@
 
 /* Targeting the navbar-menu class, let it float to the right */
-.navbar-menu {
+.navbar-menu{
     float: right;
-  }
-  
-  /* For the nav class */
-  nav {
-    /* Set margin and padding to 0 */
+}
+.nav{
     margin: 0;
     padding: 0;
-    /* Center align the text */
+    list-style: none;
     text-align: center;
-  }
-  
-  /* For the nav-item class in nav class */
-  nav .nav-item {
-    /* Set the family of fonts to nav-item-font-family */
-    font-family: var(--font-family-title);
-    /* Set the boldness of fonts to nav-item-font-weight */
-    font-weight: var(--font-weight-bold);
-    /* Set the size of fonts to nav-item-font-size */
-    font-size: var(--font-size-medium);
-    /* Set the spacing between text characters to nav-item-letter-spacing */
-    letter-spacing: 4%;
-    /* Set the display to nav-item-display */
-    display: inline-block;
-    /* Set the margin on all sides to nav-item-margin */
-    margin: 0 0 calc(3 * 1rem) 0;
-  }
-  
-  /* For the nav-link class in nav class */
-  nav .nav-link {
-    /* Set the display to block */
+}
+.nav .nav-item{
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
+}
+.nav .nav-link{
     display: block;
-    /* Set the padding */
-    padding: calc(0.5 * 1rem) var(--root-element-size) calc(0.5 * 1rem) var(--root-element-size);
-  }
-  
-  /* While hovering over the nav-link class in nav class */
-  nav .nav-link:hover {
-    /* Set their foreground color value to nav-item-link-hover */
-    color: var(--color-primary);
-  }
+    padding: 0.5rem 1rem;
+
+}
+.nav .nav-link:hover{
+    color: var(--nav-item-link-hover);
+}
   
   /* Create the following custom properties */
   :root {
