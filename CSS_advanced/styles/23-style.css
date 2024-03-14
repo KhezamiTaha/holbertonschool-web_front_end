@@ -4,20 +4,15 @@
 
 /* Style the footer-address class */
 .footer-address {
-    /* Set the color of the text to the text-color property */
-    color: var(--text-color);
+	color: var(--text-color);
 }
 
-/* Style the social-link class */
 .social-link {
-    /* Style it so that it renders as a block element */
-    display: block;
+	display: block;
 }
 
-/* Style the social-link class that also selects the svg children */
-.social-link svg {
-    /* Fill in the color of the svg children with the text-color variable */
-    fill: var(--text-color);
+.social-link > svg {
+	fill: var(--text-color);
 }
 
 
