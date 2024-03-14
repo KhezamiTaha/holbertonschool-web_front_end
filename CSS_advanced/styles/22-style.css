@@ -6,6 +6,7 @@
     background: var(--color-black);
     --text-color: var(--color-white);
     --section-title-color:var(--color-white) ;
+}
 
 
 [class^="col-"] {
