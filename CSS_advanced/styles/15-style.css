@@ -1,8 +1,7 @@
 /* Universal box sizing rule */
-* {
-    box-sizing: border-box;
-  }
-
+*, *:before, *:after {
+	box-sizing: border-box;
+}
   /* Ensure that the declaration targeting anchor elements only targets those containing a hyperlink */
 a:link {
     /* Define styles for regular anchor elements */
