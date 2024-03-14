@@ -1,3 +1,4 @@
+/** CSS */
 /* For the body, set the foreground color value to #161616 */
 body {
     color: text-color;
@@ -67,4 +68,3 @@ body {
   body {
     font-size: var(--font-size-medium);
   }
-  
