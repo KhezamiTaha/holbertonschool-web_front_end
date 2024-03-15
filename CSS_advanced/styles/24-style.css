@@ -4,30 +4,18 @@
 
 /* Target card-title that is inside card-services */
 .card-services .card-title {
-    /* The margin on all sides should be none at all */
-    margin: 0;
+	margin: 0;
 }
-
-/* Target a that is inside card-services */
 .card-services a {
-    /* Have them render as block level elements */
-    display: block;
-    /* The padding should be set to 2x the root element */
-    padding: calc(2 * var(--root-element));
-    /* Set the background color to the variable color-light-grey */
-    background-color: var(--color-light-grey);
-    /* Text should not be decorated at all */
-    text-decoration: none;
+	display: block;
+	padding: 2rem;
+	background-color: var(--color-light-grey);
 }
-
-/* Target the hover state of a that is inside card-services */
 .card-services a:hover {
-    /* Set the foreground color to the variable color-white */
-    color: var(--color-white);
-    /* Set the color of the background to the variable color-primary */
-    background-color: var(--color-primary);
+	color: var(--color-white);
+	background-color: var(--color-primary);
+	text-decoration: none;
 }
-
 
 /* Style the footer-address class */
 .footer-address {
