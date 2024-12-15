@@ -1,0 +1,13 @@
+/* a file that asign some colors to some html tags using variables */
+$color: #3d3d3d;
+$background-color: #6d6d6d;
+
+body,
+p {
+  color: $color;
+}
+
+body,
+h2 {
+  background-color: $background-color;
+}

@@ -1,0 +1,6 @@
+/* here we will use the for loops to generate repeatative numbers */
+@for $i from 1 through 5 {
+  h#{$i} {
+    font-size: #{$i}px;
+  }
+}

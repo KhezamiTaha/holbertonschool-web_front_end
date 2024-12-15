@@ -1,0 +1,13 @@
+/* we will use the import feature here */
+@import "10-colors";
+.red {
+  color: $red;
+}
+
+.green {
+  color: $green;
+}
+
+.blue {
+  color: $blue;
+}
