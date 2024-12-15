@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+        li {
+            margin-bottom: 10px;
+        }
+
+        li button {
+            font-size: 12px;
+            margin-left: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+        <label for="item">Enter a new item:</label>
+        <input type="text" name="item" id="item">
+        <button>Add your item</button>
+    </div>
+
+    <ul>
+
+    </ul>
+
+    <script>
+
+        unorderedList = document.querySelector("ul")
+        label = document.querySelector("label")
+        input = document.querySelector('input')
+
+        document.querySelector("button").addEventListener("click", () => {
+            if (input.value.trim() !== "") {
+                newItem = input.value
+                input.value = ""
+
+                const listItem = document.createElement("li");
+                const span = document.createElement("span");
+                const button = document.createElement("button");
+
+
+                listItem.append(span, button)
+
+                // Set content
+                span.textContent = newItem;
+                button.textContent = "Delete";
+
+                // Attach delete functionality
+                button.addEventListener("click", () => {
+                    listItem.remove(); // Remove the entire list item
+                });
+
+
+                unorderedList.appendChild(listItem)
+                input.focus();
+
+
+                //   const li = document.createElement("li");
+                //   li.textContent = input.value;
+                //   unorderedList.appendChild(li);
+                //   input.value = ""; // Clear input after adding
+            }
+        })
+
+    </script>
+</body>
+
+</html>
