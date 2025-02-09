@@ -44,6 +44,9 @@ At the end of this project, you will be able to explain:
 - The differences between responsive and adaptive design
 - CSS units for flexibility (%, em, rem, vw, vh)
 
+
+![alt text](images/pic-article-01_jfgjni_c_scale,w_859.jpg)
+
 ---
 
 ## Requirements
