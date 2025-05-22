@@ -1,0 +1,4 @@
+///using sort 
+/// and printing that to the debug console
+@use "103-sort_list.scss" as *;
+@debug sorted($list_to_sort);
