@@ -1,10 +1,8 @@
-// Function that demonstrates lexical scoping
-
-
 function welcome(firstName, lastName) {
-	let fullName = firstName + ' ' + lastName;
-	function displayFullName() {
-		alert(`Welcome, ${fullName}!`);
-	}
-	displayFullName()
+  let fullName = `${firstName} ${lastName}`
+
+  function displayFullName() {
+    alert(`Welcome ${fullName}!`)
+  }
+  displayFullName();
 }
