@@ -1,31 +1,24 @@
-//Simple callback
-
 function createElement(data) {
-	const paragraph = document.createElement('p');
-	const textNode = document.createTextNode(data);
-	paragraph.appendChild(textNode);
-	document.body.appendChild(paragraph);
+  let para = document.createElement("p")
+  para.textContent = data;
+  document.body.appendChild(para);
+
 }
+
 
 function queryWikipedia(callback) {
-    const url = 'https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=Stack%20Overflow&origin=*';
+  let req = new XMLHttpRequest();
+  req.open("GET", "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=Stack%20Overflow&origin=*")
 
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', url, true);
-
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            const response = JSON.parse(xhr.responseText);
-            const page = response.query.pages;
-            const pageId = Object.keys(page)[0];
-            const extract = page[pageId].extract;
-
-            callback(extract);
-        }
-    };
-
-    xhr.send(null);
+  req.onload = function () {
+    if (req.status === 200) {
+      let data = Object.values(JSON.parse(req.responseText).query.pages)[0].extract
+      callback(data)
+    }
+  }
+  
+  req.send()
+  
 }
 
-// Appel de queryWikipedia avec createElement comme callback
-queryWikipedia(createElement);
+queryWikipedia(createElement)

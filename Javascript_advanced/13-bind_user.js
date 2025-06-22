@@ -1,19 +1,18 @@
-//Write an object user with the attributes:
-
 const user = {
-	hobby: "Calligraphy",
-	favoriteSport:" Hockey",
-	astrologicalSign: "Aries",
-	firstName: "Buillaume",
-	lastName: "Johns",
-	location: "Netherlands",
-	occupation: "Engineer"
-	}
+  hobby: "Calligraphy",
+  favoriteSport: "Hockey",
+  astrologicalSign: "Aries",
+  firstName: "Guillaume",
+  lastName: "Johns",
+  location: "Netherlands",
+  occupation: "Engineer"
+};
 
-	function logWelcomeUser(welcomeString) {
-		console.log(`${welcomeString}, ${this.firstName}. Your occupation is: ${this.occupation}`);
-	}
 
-	let bindLogWelcomeUser = logWelcomeUser.bind(user);
+function logWelcomeUser(welcomeString) {
+  console.log(`${welcomeString}, ${user.firstName}. Your occupation is: ${user.occupation}`)
 
-	logWelcomeUser("Welcome");
+}
+
+let bindLogWelcomeUser = logWelcomeUser.bind(user);
+bindLogWelcomeUser("Welcome");
